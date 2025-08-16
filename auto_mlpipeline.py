@@ -243,7 +243,13 @@ def run_end_to_end(dataset_path, target_col):
     if dups:
         df = df.drop_duplicates()
         print(f"🧹 Dropped duplicates: {dups}")
-
+    
+    # Handle missing target values
+    if df[target_col].isnull().any():
+        missing_target_rows = df[target_col].isnull().sum()
+        df = df.dropna(subset=[target_col])
+        print(f"🗑️ Dropped rows with missing target values: {missing_target_rows}")
+        
     # Task detection
     task = "classification" if is_classification(df[target_col]) else "regression"
     print(f"🧭 Task: {task}")
