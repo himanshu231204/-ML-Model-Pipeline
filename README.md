@@ -2,7 +2,8 @@
 # AutoML Pipeline 
 
 This repository contains an **Automated Machine Learning (AutoML) pipeline** built in Python. The pipeline handles **data preprocessing, feature encoding, model training, evaluation, and prediction** automatically, making it easy to build and test ML models with minimal manual intervention.
-
+## 🎥 Demo Video
+[▶️ Watch the Demo](demo/demo.mp4)
 ## Features
 
 - **Automated Data Preprocessing:** Handles missing values, scaling, and categorical feature encoding (One-Hot Encoding).  
