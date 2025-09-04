@@ -17,3 +17,7 @@ statsmodels==0.14.2
 plotly==5.22.0
 missingno==0.5.2
 mlflow==2.13.0
+
+# Extra for Streamlit app
+streamlit==1.38.0
+shap==0.45.1
