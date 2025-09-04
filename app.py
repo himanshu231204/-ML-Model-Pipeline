@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import os
-from automl_pipeline import run_end_to_end, CONFIG
+from src.automl_pipeline import run_end_to_end, CONFIG
+
 
 st.set_page_config(page_title="AutoML Pipeline", layout="wide")
 
